@@ -8,13 +8,13 @@ The dataset contains all speeches given in the [Swiss Parliament](https://www.pa
 https://www.gfzb.ch/swisspoliticalspeeches/20190910.rds
 
 ### Importing into R
-`R
-# Download folder to workind directory
+```r
+# Download file to working directory
 download.file("https://www.gfzb.ch/swisspoliticalspeeches/20190910.rds", "my_file.rds")
 
 # Import
 dt <- readRDS("my_file.rds")
-`
+```
 
 ## Codebook
 | Variable | Description |
