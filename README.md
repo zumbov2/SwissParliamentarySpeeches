@@ -61,6 +61,7 @@ Zumbach, David (2019). *Swiss Parliamentary Speeches (1999-2019)*. Zürich: Grü
 ## Twitter Example
 <img src="https://raw.githubusercontent.com/zumbov2/SwissParliamentarySpeeches/master/keyness_2014-2019.png" width="800">
 
+### Code
 ```r
 # Load packages
 pacman::p_load(dplyr, quanteda, lubridate, purrr, ggwordcloud)
