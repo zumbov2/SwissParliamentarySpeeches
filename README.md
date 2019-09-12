@@ -3,6 +3,14 @@
  # Swiss Parliamentary Speeches
 The dataset contains all speeches given in the [Swiss Parliament](https://www.parlament.ch) since the 1999 winter session (*Wintersession 1999*) as well as further information on the speakers, the items of business discussed and the debate. The data were collected using web scraping and are updated at irregular intervals. 
 
+## Key Figures
+File typ: .rds
+File size: ~ 274.2 MB
+Items of business covered: 14'353
+Debates: 22'092
+Speeches: 160'597
+Number of words (spoken, cf. below): 55'912'341
+
 ## Download
 ### Link
 https://www.gfzb.ch/swisspoliticalspeeches/20190910.rds
@@ -44,6 +52,6 @@ dt <- readRDS("my_file.rds")
 ## Proposed Citation
 Zumbach, David (2019). *Swiss Parliamentary Speeches (1999-2019)*. Zürich: Grünenfelder Zumbach GmbH.
 
-## Publications and applications
+## Publications (and applications)
 * [Anthology on "Konkordanz" in the Swiss Parliament (Bühlmann et al. 2019)](https://www.nzz-libro.ch/konkordanz-im-parlament-zwischen-kooperation-und-konkurrenz-politik-und-gesellschaft-in-der-schweiz)
 * [Blog post on defacto.expert on the federal diversity in Switzerland (Mueller/Zumbach 2017)](https://www.defacto.expert/2017/12/21/foederale-vielfalt-im-schweizer-parlament/)
