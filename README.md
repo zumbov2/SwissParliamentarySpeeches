@@ -11,6 +11,8 @@ The dataset contains all speeches given in the [Swiss Parliament](https://www.pa
 **Speeches**: 160'597  
 **Number of words (spoken, cf. below)**: 55'912'341 
 
+<img src="https://raw.githubusercontent.com/zumbov2/SwissParliamentarySpeeches/master/speeches_per_year.png" width="800">
+
 ## Download
 ### Link
 https://www.gfzb.ch/swisspoliticalspeeches/20190910.rds
