@@ -3,8 +3,18 @@
  # Swiss Parliamentary Speeches
 The dataset contains all speeches given in the [Swiss Parliament](https://www.parlament.ch) since the 1999 winter session (*Wintersession 1999*) as well as further information on the speakers, the items of business discussed and the debate. The data were collected using web scraping and are updated at irregular intervals. 
 
-## Download Link
+## Download
+### Link
 https://www.gfzb.ch/swisspoliticalspeeches/20190910.rds
+
+### Importing into R
+`R
+# Download folder to workind directory
+download.file("https://www.gfzb.ch/swisspoliticalspeeches/20190910.rds", "my_file.rds")
+
+# Import
+dt <- readRDS("my_file.rds")
+`
 
 ## Codebook
 | Variable | Description |
