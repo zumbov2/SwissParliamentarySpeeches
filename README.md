@@ -1,7 +1,7 @@
  [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
  
  # Swiss Parliamentary Speeches
-The dataset contains all speeches given in the [Swiss Parliament](https://www.parlament.ch) since the 1999 winter session (*Wintersession 1999*) as well as further information on the speakers and the items of business discussed. The data were collected using web scraping and are updated at irregular intervals. 
+The dataset contains all speeches given in the [Swiss Parliament](https://www.parlament.ch) since the 1999 winter session (*Wintersession 1999*) as well as further information on the speakers, the items of business discussed and the debate. The data were collected using web scraping and are updated at irregular intervals. 
 
 ## Codebook
 | Variable | Description |
@@ -25,7 +25,7 @@ The dataset contains all speeches given in the [Swiss Parliament](https://www.pa
 | `d_date` | Date of the debate *(YYYY-MM-DD)* |
 | `d_time` | Start time of the debate (HHhMM) |
 | `d_council` | Council of debate *(NR = Nationalrat (National Council), SR = Ständerat (Council of states), VB = Vereinigte Bundesversammlung (United federal Assembly))* |
-| `d_preliminary` | Dummy variable, if `d_provisional == 1` the transcripts of the debate are preliminary. |
+| `d_preliminary` | Dummy variable, if `d_preliminary == 1` the transcripts of the debate are preliminary. |
 | `scraping_timestamp` | Time of scraping |
 
 ## Proposed Citation
