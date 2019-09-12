@@ -56,4 +56,4 @@ Zumbach, David (2019). *Swiss Parliamentary Speeches (1999-2019)*. Zürich: Grü
 
 ## Publications (and applications)
 * [Anthology on "Konkordanz" in the Swiss Parliament (Bühlmann et al. 2019)](https://www.nzz-libro.ch/konkordanz-im-parlament-zwischen-kooperation-und-konkurrenz-politik-und-gesellschaft-in-der-schweiz)
-* [Blog post on defacto.expert on the federal diversity in Switzerland (Mueller/Zumbach 2017)](https://www.defacto.expert/2017/12/21/foederale-vielfalt-im-schweizer-parlament/)
+* [Blog post on DeFacto on the federal diversity in Switzerland (Mueller/Zumbach 2017)](https://www.defacto.expert/2017/12/21/foederale-vielfalt-im-schweizer-parlament/)
