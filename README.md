@@ -57,3 +57,49 @@ Zumbach, David (2019). *Swiss Parliamentary Speeches (1999-2019)*. Zürich: Grü
 ## Publications (and applications)
 * [Anthology on "Konkordanz" in the Swiss Parliament (Bühlmann et al. 2019)](https://www.nzz-libro.ch/konkordanz-im-parlament-zwischen-kooperation-und-konkurrenz-politik-und-gesellschaft-in-der-schweiz)
 * [Blog post on DeFacto on the federal diversity in Switzerland (Mueller/Zumbach 2017)](https://www.defacto.expert/2017/12/21/foederale-vielfalt-im-schweizer-parlament/)
+
+## Twitter Example
+```r
+# Load packages
+pacman::p_load(dplyr, quanteda, lubridate, purrr, ggwordcloud)
+
+# Create a document-feature matrix from the transcripts
+dt_dfm <- quanteda::corpus(
+  dt$s_transcript, 
+  docnames = dt$s_link,
+  docvars = dt %>% 
+    dplyr::mutate(year = lubridate::year(d_date)) %>% 
+    dplyr::select(year)
+  ) %>%
+  quanteda::dfm(
+    tolower = FALSE,
+    remove_punct = TRUE,
+    remove_numbers = TRUE, 
+    remove = c(
+      quanteda::stopwords(language = c("de")), 
+      quanteda::stopwords(language = c("fr")), 
+      quanteda::stopwords(language = c("it"))
+    )
+  )
+
+# Function for yearly keyness
+get_keyness_per_year <- function(year, n = 30, dfm) {
+  
+  dfm %>% 
+    quanteda::textstat_keyness(target = quanteda::docvars(dfm, "year") == year) %>% 
+    dplyr::top_n(n, chi2) %>% 
+    dplyr::mutate(year = year)
+  
+}
+
+# Calculate keyness for 2014-2019
+dt_keyness <- purrr::map_dfr(2014:2019, get_keyness_per_year, n = 30, dfm = dt_dfm)
+
+# Plot
+dt_keyness %>% 
+  ggplot2::ggplot(aes(label = feature, size = chi2, alpha = chi2^(1/2))) +
+  ggwordcloud::geom_text_wordcloud() +
+  ggplot2::facet_wrap(year~.)
+```
+
+
