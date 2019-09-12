@@ -1,7 +1,7 @@
  [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
  
  # Swiss Parliamentary Speeches
-The dataset contains all speeches given in the [Swiss Parliament](https://www.parlament.ch) since the 1999 winter session (*Wintersession 1999*) as well as further information on the speakers, the items of business discussed and the debate. The data were collected using web scraping and are updated at irregular intervals. 
+The dataset contains all speeches given in the [Swiss Parliament](https://www.parlament.ch) since the 1999 winter session (*Wintersession 1999*) as well as further information on the speakers, the items of business discussed and the debates. The data were collected using web scraping and are updated at irregular intervals. 
 
 ## Key Figures
 **File typ**: .rds  
