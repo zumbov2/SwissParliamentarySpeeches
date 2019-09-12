@@ -99,8 +99,9 @@ dt_keyness <- purrr::map_dfr(2014:2019, get_keyness_per_year, n = 30, dfm = dt_d
 
 # Plot
 dt_keyness %>% 
-  ggplot2::ggplot(aes(label = feature, size = chi2, alpha = chi2^(1/2))) +
-  ggwordcloud::geom_text_wordcloud() +
+  ggplot2::ggplot(ggplot2::aes(label = feature, size = chi2, alpha = chi2^(1/2))) +
+  ggwordcloud::geom_text_wordcloud_area() +
+  ggplot2::scale_size_area(max_size = 14) +
   ggplot2::facet_wrap(year~.)
 ```
 
