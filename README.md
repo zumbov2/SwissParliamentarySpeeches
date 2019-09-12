@@ -59,6 +59,8 @@ Zumbach, David (2019). *Swiss Parliamentary Speeches (1999-2019)*. Zürich: Grü
 * [Blog post on DeFacto on the federal diversity in Switzerland (Mueller/Zumbach 2017)](https://www.defacto.expert/2017/12/21/foederale-vielfalt-im-schweizer-parlament/)
 
 ## Twitter Example
+<img src="https://raw.githubusercontent.com/zumbov2/SwissParliamentarySpeeches/master/keyness_2014-2019.png" width="800">
+
 ```r
 # Load packages
 pacman::p_load(dplyr, quanteda, lubridate, purrr, ggwordcloud)
